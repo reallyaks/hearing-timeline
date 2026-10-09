@@ -1,6 +1,6 @@
 # hearing-timeline
 
-Turns a timestamped hearing transcript into a timeline and an entity list. The sample is a 40-line fictional planning-board hearing about a data-center permit. Nobody in it is real.
+Turns a timestamped transcript into a timeline and an entity list. The sample is a 40-line fictional meeting of a planning committee on an application for planning permission. The people and the site are invented.
 
 ## Run
 

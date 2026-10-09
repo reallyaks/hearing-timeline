@@ -18,9 +18,9 @@ class TimelineTests(unittest.TestCase):
 
     def test_entities_cluster(self):
         clusters = cluster_entities(TEXT)
-        self.assertIn("Northline Data LLC", clusters["applicant"])
-        self.assertIn("Planning Board", clusters["board"])
-        self.assertIn("Elena Voss", clusters["staff"])
+        self.assertIn("Northline Data Limited", clusters["applicant"])
+        self.assertIn("Planning Committee", clusters["committee"])
+        self.assertIn("Elena Voss", clusters["officer"])
 
     def test_committed_outputs(self):
         turns = parse_turns(TEXT)

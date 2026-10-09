@@ -7,22 +7,22 @@ from dataclasses import dataclass
 
 TURN_RE = re.compile(r"^\[(?P<time>\d{2}:\d{2}:\d{2})\]\s+(?P<speaker>[A-Z][A-Z ]*):\s+(?P<text>.*)$")
 DATE_RE = re.compile(
-    r"\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s+\d{4}\b"
+    r"\b(?:\d{1,2}\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{4}|(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s+\d{4})\b"
 )
-MOTION_RE = re.compile(r"\b(moves to|motion to|the motion|is there a motion|seconds the motion)\b", re.I)
+MOTION_RE = re.compile(r"\b(moves to|motion to|the motion|is there a motion|seconds the motion|i move)\b", re.I)
 OBJECTION_RE = re.compile(r"\b(I object|objection)\b", re.I)
-VOTE_RE = re.compile(r"\b(aye|the vote is|votes aye|all in favor)\b", re.I)
+VOTE_RE = re.compile(r"\b(the vote is|all in favour|all in favor|motion is carried)\b", re.I)
 
 ALIASES = [
-    ("Northline Data LLC", "applicant"),
+    ("Northline Data Limited", "applicant"),
     ("Priya Shah", "applicant"),
     ("the applicant", "applicant"),
-    ("Planning Board", "board"),
-    ("the board", "board"),
-    ("the chair", "board"),
-    ("Elena Voss", "staff"),
-    ("Staff", "staff"),
-    ("Mara Ellison", "neighbor"),
+    ("Planning Committee", "committee"),
+    ("the committee", "committee"),
+    ("the chair", "committee"),
+    ("Elena Voss", "officer"),
+    ("the case officer", "officer"),
+    ("Mara Ellison", "objector"),
 ]
 
 

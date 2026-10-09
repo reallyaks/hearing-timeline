@@ -1,19 +1,20 @@
 {
   "applicant": [
-    "Northline Data LLC",
-    "Priya Shah"
+    "Northline Data Limited",
+    "Priya Shah",
+    "the applicant"
   ],
-  "board": [
-    "Planning Board",
-    "The chair"
+  "committee": [
+    "Planning Committee",
+    "The chair",
+    "The committee",
+    "the committee"
   ],
-  "neighbor": [
+  "objector": [
     "Mara Ellison"
   ],
-  "staff": [
+  "officer": [
     "Elena Voss",
-    "STAFF",
-    "Staff",
-    "staff"
+    "the case officer"
   ]
 }
